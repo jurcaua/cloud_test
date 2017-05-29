@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: e9f3c30bedcc50e4aac6b4e2e1a714eb
+timeCreated: 1495723658
+licenseType: Free
+ShaderImporter:
+  defaultTextures:
+  - _Caustic: {fileID: 2800000, guid: 28c7aad1372ff114b90d330f8a2dd938, type: 3}
+  - _Noise: {fileID: 2800000, guid: e958c6041cfe445e987c73751e8d4082, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
