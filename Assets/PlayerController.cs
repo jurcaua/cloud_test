@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 
         //sponge.SetVector("_TouchPoint", new Vector4(r.position.x, r.position.y, r.position.z, 0f));
 
-
+		/*
         if (lerpingMaterials.Count > 0) {
             for (int i = 0; i < lerpingMaterials.Count; i++) {
                 curLerpVal = lerpingMaterials[i].mat.GetFloat("_LerpValue");
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour {
                     }
                 }
             }
-        }
+        }*/
 	}
 
     private void OnCollisionEnter(Collision collision) {

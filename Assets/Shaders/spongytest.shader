@@ -4,14 +4,14 @@
 // Shader created with Shader Forge v1.35 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:33252,y:32774,varname:node_2865,prsc:2|diff-6246-OUT,spec-6068-OUT,normal-4151-RGB,emission-8046-RGB,voffset-8578-OUT;n:type:ShaderForge.SFN_Color,id:8051,x:32654,y:32625,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_8051,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0,c3:1,c4:1;n:type:ShaderForge.SFN_Length,id:1218,x:32544,y:33401,varname:node_1218,prsc:2|IN-7290-OUT;n:type:ShaderForge.SFN_Multiply,id:8935,x:32760,y:33401,varname:node_8935,prsc:2|A-1218-OUT,B-6451-OUT;n:type:ShaderForge.SFN_Slider,id:6451,x:32524,y:33609,ptovrint:False,ptlb:Strength,ptin:_Strength,varname:node_6451,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.07101671,max:1;n:type:ShaderForge.SFN_Vector1,id:6068,x:32886,y:32832,varname:node_6068,prsc:2,v1:0;n:type:ShaderForge.SFN_Tex2d,id:8138,x:32559,y:32413,ptovrint:False,ptlb:node_8138,ptin:_node_8138,varname:node_8138,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:03802f2f2cf93e14e8661e0930a2f565,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Vector4Property,id:5928,x:31913,y:33374,ptovrint:False,ptlb:TouchPoint,ptin:_TouchPoint,varname:node_5928,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0,v2:0,v3:0,v4:0;n:type:ShaderForge.SFN_FragmentPosition,id:8087,x:31913,y:33560,varname:node_8087,prsc:2;n:type:ShaderForge.SFN_ComponentMask,id:7290,x:32358,y:33413,varname:node_7290,prsc:2,cc1:0,cc2:2,cc3:-1,cc4:-1|IN-3532-OUT;n:type:ShaderForge.SFN_Subtract,id:3532,x:32139,y:33445,varname:node_3532,prsc:2|A-5928-XYZ,B-8087-XYZ;n:type:ShaderForge.SFN_Tex2d,id:4151,x:32594,y:32899,ptovrint:False,ptlb:node_4151,ptin:_node_4151,varname:node_4151,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:36fbd38d72d796b43928db41d9cdefe7,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:8610,x:32309,y:32720,ptovrint:False,ptlb:node_8610,ptin:_node_8610,varname:node_8610,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:6246,x:32930,y:32648,varname:node_6246,prsc:2|A-8138-RGB,B-8051-RGB;n:type:ShaderForge.SFN_Color,id:8046,x:32791,y:32973,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:node_8046,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:8578,x:33041,y:33238,varname:node_8578,prsc:2|A-2392-OUT,B-355-OUT,T-5408-OUT;n:type:ShaderForge.SFN_Vector1,id:355,x:32793,y:33179,varname:node_355,prsc:2,v1:0;n:type:ShaderForge.SFN_Slider,id:5408,x:32636,y:33285,ptovrint:False,ptlb:LerpValue,ptin:_LerpValue,varname:node_5408,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Clamp01,id:2392,x:32933,y:33401,varname:node_2392,prsc:2|IN-8935-OUT;proporder:8051-6451-8138-5928-4151-8046-5408;pass:END;sub:END;*/
+/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:33252,y:32774,varname:node_2865,prsc:2|diff-6246-OUT,spec-6068-OUT,normal-4151-RGB,emission-8046-RGB,voffset-8578-OUT;n:type:ShaderForge.SFN_Color,id:8051,x:32654,y:32625,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_8051,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0,c3:1,c4:1;n:type:ShaderForge.SFN_Length,id:1218,x:32418,y:33433,varname:node_1218,prsc:2|IN-7290-OUT;n:type:ShaderForge.SFN_Multiply,id:8935,x:32793,y:33401,varname:node_8935,prsc:2|A-1218-OUT,B-6451-OUT;n:type:ShaderForge.SFN_Slider,id:6451,x:32501,y:33633,ptovrint:False,ptlb:Strength,ptin:_Strength,varname:node_6451,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.6867717,max:1;n:type:ShaderForge.SFN_Vector1,id:6068,x:32886,y:32832,varname:node_6068,prsc:2,v1:0;n:type:ShaderForge.SFN_Tex2d,id:8138,x:32559,y:32413,ptovrint:False,ptlb:node_8138,ptin:_node_8138,varname:node_8138,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:03802f2f2cf93e14e8661e0930a2f565,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Vector4Property,id:5928,x:31855,y:33362,ptovrint:False,ptlb:TouchPoint,ptin:_TouchPoint,varname:node_5928,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.5,v2:0,v3:1,v4:0;n:type:ShaderForge.SFN_FragmentPosition,id:8087,x:31855,y:33548,varname:node_8087,prsc:2;n:type:ShaderForge.SFN_ComponentMask,id:7290,x:32247,y:33433,varname:node_7290,prsc:2,cc1:0,cc2:2,cc3:-1,cc4:-1|IN-3532-OUT;n:type:ShaderForge.SFN_Subtract,id:3532,x:32081,y:33433,varname:node_3532,prsc:2|A-5928-XYZ,B-8087-XYZ;n:type:ShaderForge.SFN_Tex2d,id:4151,x:32594,y:32899,ptovrint:False,ptlb:node_4151,ptin:_node_4151,varname:node_4151,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:36fbd38d72d796b43928db41d9cdefe7,ntxv:3,isnm:True;n:type:ShaderForge.SFN_Tex2d,id:8610,x:32309,y:32720,ptovrint:False,ptlb:node_8610,ptin:_node_8610,varname:node_8610,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:6246,x:32930,y:32648,varname:node_6246,prsc:2|A-8138-RGB,B-8051-RGB;n:type:ShaderForge.SFN_Color,id:8046,x:32791,y:32973,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:node_8046,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:8578,x:33041,y:33238,varname:node_8578,prsc:2|A-2392-OUT,B-355-OUT,T-5408-OUT;n:type:ShaderForge.SFN_Vector1,id:355,x:32793,y:33179,varname:node_355,prsc:2,v1:0;n:type:ShaderForge.SFN_Slider,id:5408,x:32636,y:33285,ptovrint:False,ptlb:LerpValue,ptin:_LerpValue,varname:node_5408,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0,max:1;n:type:ShaderForge.SFN_Clamp01,id:2392,x:32968,y:33401,varname:node_2392,prsc:2|IN-8935-OUT;n:type:ShaderForge.SFN_Step,id:8476,x:32615,y:33419,varname:node_8476,prsc:2|A-2088-OUT,B-1218-OUT;n:type:ShaderForge.SFN_Vector1,id:2088,x:32446,y:33342,varname:node_2088,prsc:2,v1:0.5;proporder:8051-6451-8138-5928-4151-8046-5408;pass:END;sub:END;*/
 
 Shader "Shader Forge/spongytest" {
     Properties {
         _Color ("Color", Color) = (0.5,0,1,1)
-        _Strength ("Strength", Range(0, 1)) = 0.07101671
+        _Strength ("Strength", Range(0, 1)) = 0.6867717
         _node_8138 ("node_8138", 2D) = "white" {}
-        _TouchPoint ("TouchPoint", Vector) = (0,0,0,0)
+        _TouchPoint ("TouchPoint", Vector) = (0.5,0,1,0)
         _node_4151 ("node_4151", 2D) = "bump" {}
         _Emission ("Emission", Color) = (0.5,0.5,0.5,1)
         _LerpValue ("LerpValue", Range(0, 1)) = 0
@@ -91,7 +91,8 @@ Shader "Shader Forge/spongytest" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float node_8578 = lerp(saturate((length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb)*_Strength)),0.0,_LerpValue);
+                float node_1218 = length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb);
+                float node_8578 = lerp(saturate((node_1218*_Strength)),0.0,_LerpValue);
                 v.vertex.xyz += float3(node_8578,node_8578,node_8578);
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
@@ -276,7 +277,8 @@ Shader "Shader Forge/spongytest" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float node_8578 = lerp(saturate((length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb)*_Strength)),0.0,_LerpValue);
+                float node_1218 = length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb);
+                float node_8578 = lerp(saturate((node_1218*_Strength)),0.0,_LerpValue);
                 v.vertex.xyz += float3(node_8578,node_8578,node_8578);
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
@@ -389,7 +391,8 @@ Shader "Shader Forge/spongytest" {
                 VertexOutput o = (VertexOutput)0;
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
-                float node_8578 = lerp(saturate((length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb)*_Strength)),0.0,_LerpValue);
+                float node_1218 = length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb);
+                float node_8578 = lerp(saturate((node_1218*_Strength)),0.0,_LerpValue);
                 v.vertex.xyz += float3(node_8578,node_8578,node_8578);
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityObjectToClipPos(v.vertex );
@@ -452,7 +455,8 @@ Shader "Shader Forge/spongytest" {
                 o.uv0 = v.texcoord0;
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
-                float node_8578 = lerp(saturate((length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb)*_Strength)),0.0,_LerpValue);
+                float node_1218 = length((_TouchPoint.rgb-mul(unity_ObjectToWorld, v.vertex).rgb).rb);
+                float node_8578 = lerp(saturate((node_1218*_Strength)),0.0,_LerpValue);
                 v.vertex.xyz += float3(node_8578,node_8578,node_8578);
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST );
