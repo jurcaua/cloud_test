@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    private List<Material> sponges;
+
     public Material sponge;
     public float speed = 5f;
+    public float jumpForce = 600f;
     public float lerpSpeed = 0.005f;
 
     private Rigidbody r;
@@ -27,11 +30,22 @@ public class PlayerController : MonoBehaviour {
         r = GetComponent<Rigidbody>();
 
         lerpingMaterials = new List<Cloud>();
+
+        sponges = new List<Material>();
+
+        GameObject[] spongyObjects = GameObject.FindGameObjectsWithTag("Spongy");
+        for (int i = 0; i < spongyObjects.Length; i++) {
+            sponges.Add(spongyObjects[i].GetComponent<MeshRenderer>().material);
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
         r.MovePosition(r.position + new Vector3(Input.GetAxisRaw("Horizontal")*Time.deltaTime * speed, 0, Input.GetAxisRaw("Vertical")* Time.deltaTime * speed));
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            r.AddForce(Vector3.up * jumpForce);
+        }
 
         //sponge.SetVector("_TouchPoint", new Vector4(r.position.x, r.position.y, r.position.z, 0f));
 
@@ -56,26 +70,30 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }*/
+
+        for (int i = 0; i < sponges.Count; i++) {
+            sponges[i].SetVector("_TouchPoint", new Vector4(r.position.x, r.position.y, r.position.z, 0f));
+        }
 	}
 
     private void OnCollisionEnter(Collision collision) {
         MeshRenderer mesh = collision.gameObject.GetComponent<MeshRenderer>();
         if (mesh != null) {
-            lerpingMaterials.Add(new Cloud(mesh.material, 0f));
+            //lerpingMaterials.Add(new Cloud(mesh.material, 0f));
         }
     }
 
     private void OnCollisionStay(Collision collision) {
         MeshRenderer mesh = collision.gameObject.GetComponent<MeshRenderer>();
         if (mesh != null) {
-            mesh.material.SetVector("_TouchPoint", new Vector4(r.position.x, r.position.y, r.position.z, 0f));
+            //mesh.material.SetVector("_TouchPoint", new Vector4(r.position.x, r.position.y, r.position.z, 0f));
         }
     }
 
     private void OnCollisionExit(Collision collision) {
         MeshRenderer mesh = collision.gameObject.GetComponent<MeshRenderer>();
         if (mesh != null) {
-            lerpingMaterials.Add(new Cloud(mesh.material, 1f));
+            //lerpingMaterials.Add(new Cloud(mesh.material, 1f));
         }
     }
 }
