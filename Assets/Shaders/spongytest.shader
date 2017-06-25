@@ -4,7 +4,7 @@
 // Shader created with Shader Forge v1.35 
 // Shader Forge (c) Neat Corporation / Joachim Holmer - http://www.acegikmo.com/shaderforge/
 // Note: Manually altering this data may prevent you from opening it in Shader Forge
-/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:33906,y:32738,varname:node_2865,prsc:2|diff-8285-OUT,spec-6068-OUT,normal-8610-RGB,emission-8046-RGB,voffset-3953-OUT;n:type:ShaderForge.SFN_Color,id:8051,x:32515,y:32661,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_8051,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Length,id:1218,x:32650,y:33433,varname:node_1218,prsc:2|IN-1182-OUT;n:type:ShaderForge.SFN_Multiply,id:8935,x:33158,y:33488,varname:node_8935,prsc:2|A-2341-OUT,B-6451-OUT;n:type:ShaderForge.SFN_Slider,id:6451,x:32741,y:33651,ptovrint:False,ptlb:Strength,ptin:_Strength,varname:node_6451,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.4051268,max:1;n:type:ShaderForge.SFN_Vector1,id:6068,x:32892,y:32814,varname:node_6068,prsc:2,v1:0;n:type:ShaderForge.SFN_Tex2d,id:8138,x:32684,y:32416,ptovrint:False,ptlb:Main Texture,ptin:_MainTexture,varname:node_8138,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:28c7aad1372ff114b90d330f8a2dd938,ntxv:0,isnm:False|UVIN-5379-UVOUT;n:type:ShaderForge.SFN_Vector4Property,id:5928,x:31855,y:33362,ptovrint:False,ptlb:TouchPoint,ptin:_TouchPoint,varname:node_5928,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.5,v2:1,v3:1,v4:0;n:type:ShaderForge.SFN_FragmentPosition,id:8087,x:31855,y:33548,varname:node_8087,prsc:2;n:type:ShaderForge.SFN_ComponentMask,id:7290,x:32247,y:33433,varname:node_7290,prsc:2,cc1:0,cc2:2,cc3:1,cc4:-1|IN-3532-OUT;n:type:ShaderForge.SFN_Subtract,id:3532,x:32081,y:33433,varname:node_3532,prsc:2|A-5928-XYZ,B-8087-XYZ;n:type:ShaderForge.SFN_Tex2d,id:8610,x:33571,y:32482,ptovrint:False,ptlb:node_8610,ptin:_node_8610,varname:node_8610,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:36fbd38d72d796b43928db41d9cdefe7,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:6246,x:32860,y:32634,varname:node_6246,prsc:2|A-8138-RGB,B-8051-RGB;n:type:ShaderForge.SFN_Color,id:8046,x:32791,y:32973,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:node_8046,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:8578,x:33559,y:33099,varname:node_8578,prsc:2|A-7958-OUT,B-355-OUT,T-4746-OUT;n:type:ShaderForge.SFN_Vector1,id:355,x:32793,y:33188,cmnt:No depression,varname:node_355,prsc:2,v1:1;n:type:ShaderForge.SFN_Append,id:1182,x:32446,y:33433,varname:node_1182,prsc:2|A-7290-R,B-7290-G;n:type:ShaderForge.SFN_Subtract,id:9842,x:32261,y:33640,cmnt:Checking height of player,varname:node_9842,prsc:2|A-7290-B,B-4320-OUT;n:type:ShaderForge.SFN_Vector1,id:4320,x:32081,y:33659,varname:node_4320,prsc:2,v1:1;n:type:ShaderForge.SFN_Clamp01,id:4746,x:32734,y:33297,cmnt:Lerp according to closeness in y,varname:node_4746,prsc:2|IN-8730-OUT;n:type:ShaderForge.SFN_RemapRange,id:2341,x:32898,y:33433,varname:node_2341,prsc:2,frmn:0,frmx:1,tomn:0,tomx:0.5|IN-1218-OUT;n:type:ShaderForge.SFN_If,id:8730,x:32465,y:33762,varname:node_8730,prsc:2|A-9842-OUT,B-6586-OUT,GT-9842-OUT,EQ-9842-OUT,LT-9799-OUT;n:type:ShaderForge.SFN_Vector1,id:6586,x:32261,y:33762,varname:node_6586,prsc:2,v1:0;n:type:ShaderForge.SFN_Multiply,id:9799,x:32275,y:33877,varname:node_9799,prsc:2|A-9842-OUT,B-9809-OUT;n:type:ShaderForge.SFN_Vector1,id:9809,x:32099,y:33899,varname:node_9809,prsc:2,v1:-1;n:type:ShaderForge.SFN_Multiply,id:3953,x:33652,y:32933,varname:node_3953,prsc:2|A-8285-OUT,B-8578-OUT;n:type:ShaderForge.SFN_Clamp01,id:7958,x:33335,y:33289,varname:node_7958,prsc:2|IN-8935-OUT;n:type:ShaderForge.SFN_Panner,id:5379,x:32503,y:32404,varname:node_5379,prsc:2,spu:1,spv:1|UVIN-5303-UVOUT,DIST-3240-OUT;n:type:ShaderForge.SFN_TexCoord,id:5303,x:32261,y:32404,varname:node_5303,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Time,id:9099,x:32103,y:32552,varname:node_9099,prsc:2;n:type:ShaderForge.SFN_Divide,id:3240,x:32316,y:32552,varname:node_3240,prsc:2|A-9099-TSL,B-2062-OUT;n:type:ShaderForge.SFN_Vector1,id:2062,x:32103,y:32681,varname:node_2062,prsc:2,v1:3;n:type:ShaderForge.SFN_If,id:8285,x:33177,y:32691,varname:node_8285,prsc:2|A-6246-OUT,B-4959-OUT,GT-6246-OUT,EQ-6246-OUT,LT-4959-OUT;n:type:ShaderForge.SFN_Vector1,id:4959,x:32983,y:32738,varname:node_4959,prsc:2,v1:0.4;proporder:8051-6451-8138-5928-8046-8610;pass:END;sub:END;*/
+/*SF_DATA;ver:1.35;sub:START;pass:START;ps:flbk:,iptp:0,cusa:False,bamd:0,lico:1,lgpr:1,limd:3,spmd:1,trmd:0,grmd:1,uamb:True,mssp:True,bkdf:True,hqlp:False,rprd:True,enco:False,rmgx:True,imps:True,rpth:0,vtps:0,hqsc:True,nrmq:1,nrsp:0,vomd:0,spxs:False,tesm:0,olmd:1,culm:0,bsrc:0,bdst:1,dpts:2,wrdp:True,dith:0,atcv:False,rfrpo:True,rfrpn:Refraction,coma:15,ufog:True,aust:True,igpj:False,qofs:0,qpre:1,rntp:1,fgom:False,fgoc:False,fgod:False,fgor:False,fgmd:0,fgcr:0.5,fgcg:0.5,fgcb:0.5,fgca:1,fgde:0.01,fgrn:0,fgrf:300,stcl:False,stva:128,stmr:255,stmw:255,stcp:6,stps:0,stfa:0,stfz:0,ofsf:0,ofsu:0,f2p0:False,fnsp:False,fnfb:False;n:type:ShaderForge.SFN_Final,id:2865,x:33906,y:32738,varname:node_2865,prsc:2|diff-8285-OUT,spec-6068-OUT,normal-8610-RGB,emission-8046-RGB,voffset-3953-OUT;n:type:ShaderForge.SFN_Color,id:8051,x:32515,y:32661,ptovrint:False,ptlb:Color,ptin:_Color,varname:node_8051,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:1,c2:1,c3:1,c4:1;n:type:ShaderForge.SFN_Length,id:1218,x:32650,y:33433,varname:node_1218,prsc:2|IN-1182-OUT;n:type:ShaderForge.SFN_Multiply,id:8935,x:33158,y:33488,varname:node_8935,prsc:2|A-2341-OUT,B-6451-OUT;n:type:ShaderForge.SFN_Slider,id:6451,x:32741,y:33651,ptovrint:False,ptlb:Strength,ptin:_Strength,varname:node_6451,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,min:0,cur:0.4051268,max:1;n:type:ShaderForge.SFN_Vector1,id:6068,x:32892,y:32814,varname:node_6068,prsc:2,v1:0;n:type:ShaderForge.SFN_Tex2d,id:8138,x:32684,y:32416,ptovrint:False,ptlb:Main Texture,ptin:_MainTexture,varname:node_8138,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:28c7aad1372ff114b90d330f8a2dd938,ntxv:0,isnm:False|UVIN-5303-UVOUT;n:type:ShaderForge.SFN_Vector4Property,id:5928,x:31855,y:33362,ptovrint:False,ptlb:TouchPoint,ptin:_TouchPoint,varname:node_5928,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,v1:0.5,v2:1,v3:1,v4:0;n:type:ShaderForge.SFN_FragmentPosition,id:8087,x:31855,y:33548,varname:node_8087,prsc:2;n:type:ShaderForge.SFN_ComponentMask,id:7290,x:32247,y:33433,varname:node_7290,prsc:2,cc1:0,cc2:2,cc3:1,cc4:-1|IN-3532-OUT;n:type:ShaderForge.SFN_Subtract,id:3532,x:32081,y:33433,varname:node_3532,prsc:2|A-5928-XYZ,B-8087-XYZ;n:type:ShaderForge.SFN_Tex2d,id:8610,x:33571,y:32482,ptovrint:False,ptlb:node_8610,ptin:_node_8610,varname:node_8610,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,tex:36fbd38d72d796b43928db41d9cdefe7,ntxv:0,isnm:False;n:type:ShaderForge.SFN_Multiply,id:6246,x:32860,y:32634,varname:node_6246,prsc:2|A-8138-RGB,B-8051-RGB;n:type:ShaderForge.SFN_Color,id:8046,x:32791,y:32973,ptovrint:False,ptlb:Emission,ptin:_Emission,varname:node_8046,prsc:2,glob:False,taghide:False,taghdr:False,tagprd:False,tagnsco:False,tagnrm:False,c1:0.5,c2:0.5,c3:0.5,c4:1;n:type:ShaderForge.SFN_Lerp,id:8578,x:33559,y:33099,varname:node_8578,prsc:2|A-7958-OUT,B-355-OUT,T-4746-OUT;n:type:ShaderForge.SFN_Vector1,id:355,x:32793,y:33188,cmnt:No depression,varname:node_355,prsc:2,v1:1;n:type:ShaderForge.SFN_Append,id:1182,x:32446,y:33433,varname:node_1182,prsc:2|A-7290-R,B-7290-G;n:type:ShaderForge.SFN_Subtract,id:9842,x:32261,y:33640,cmnt:Checking height of player,varname:node_9842,prsc:2|A-7290-B,B-4320-OUT;n:type:ShaderForge.SFN_Vector1,id:4320,x:32081,y:33659,varname:node_4320,prsc:2,v1:1;n:type:ShaderForge.SFN_Clamp01,id:4746,x:32734,y:33297,cmnt:Lerp according to closeness in y,varname:node_4746,prsc:2|IN-8730-OUT;n:type:ShaderForge.SFN_RemapRange,id:2341,x:32898,y:33433,varname:node_2341,prsc:2,frmn:0,frmx:1,tomn:-1,tomx:0|IN-1218-OUT;n:type:ShaderForge.SFN_If,id:8730,x:32465,y:33762,varname:node_8730,prsc:2|A-9842-OUT,B-6586-OUT,GT-9842-OUT,EQ-9842-OUT,LT-9799-OUT;n:type:ShaderForge.SFN_Vector1,id:6586,x:32261,y:33762,varname:node_6586,prsc:2,v1:0;n:type:ShaderForge.SFN_Multiply,id:9799,x:32275,y:33877,varname:node_9799,prsc:2|A-9842-OUT,B-9809-OUT;n:type:ShaderForge.SFN_Vector1,id:9809,x:32099,y:33899,varname:node_9809,prsc:2,v1:-1;n:type:ShaderForge.SFN_Multiply,id:3953,x:33652,y:32933,varname:node_3953,prsc:2|A-8285-OUT,B-8578-OUT;n:type:ShaderForge.SFN_Clamp01,id:7958,x:33335,y:33289,varname:node_7958,prsc:2|IN-8935-OUT;n:type:ShaderForge.SFN_Panner,id:5379,x:32488,y:32469,varname:node_5379,prsc:2,spu:1,spv:1|DIST-3240-OUT;n:type:ShaderForge.SFN_TexCoord,id:5303,x:32261,y:32404,varname:node_5303,prsc:2,uv:0,uaff:False;n:type:ShaderForge.SFN_Time,id:9099,x:32103,y:32552,varname:node_9099,prsc:2;n:type:ShaderForge.SFN_Divide,id:3240,x:32316,y:32552,varname:node_3240,prsc:2|A-9099-TSL,B-2062-OUT;n:type:ShaderForge.SFN_Vector1,id:2062,x:32103,y:32681,varname:node_2062,prsc:2,v1:3;n:type:ShaderForge.SFN_If,id:8285,x:33177,y:32691,varname:node_8285,prsc:2|A-6246-OUT,B-4959-OUT,GT-6246-OUT,EQ-6246-OUT,LT-4959-OUT;n:type:ShaderForge.SFN_Vector1,id:4959,x:32983,y:32738,varname:node_4959,prsc:2,v1:0.4;proporder:8051-6451-8138-5928-8046-8610;pass:END;sub:END;*/
 
 Shader "Shader Forge/spongytest" {
     Properties {
@@ -44,7 +44,6 @@ Shader "Shader Forge/spongytest" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
-            uniform float4 _TimeEditor;
             uniform float4 _Color;
             uniform float _Strength;
             uniform sampler2D _MainTexture; uniform float4 _MainTexture_ST;
@@ -90,9 +89,7 @@ Shader "Shader Forge/spongytest" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (o.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(node_5379, _MainTexture),0.0,0));
+                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(o.uv0, _MainTexture),0.0,0));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
@@ -102,7 +99,7 @@ Shader "Shader Forge/spongytest" {
                 float node_9842 = (node_7290.b-1.0); // Checking height of player
                 float node_8730_if_leA = step(node_9842,0.0);
                 float node_8730_if_leB = step(0.0,node_9842);
-                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*0.5+0.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
+                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*1.0+-1.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = UnityObjectToClipPos(v.vertex );
@@ -176,9 +173,7 @@ Shader "Shader Forge/spongytest" {
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = 0.0;
                 float specularMonochrome;
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (i.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2D(_MainTexture,TRANSFORM_TEX(node_5379, _MainTexture));
+                float4 _MainTexture_var = tex2D(_MainTexture,TRANSFORM_TEX(i.uv0, _MainTexture));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
@@ -258,7 +253,6 @@ Shader "Shader Forge/spongytest" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
-            uniform float4 _TimeEditor;
             uniform float4 _Color;
             uniform float _Strength;
             uniform sampler2D _MainTexture; uniform float4 _MainTexture_ST;
@@ -293,9 +287,7 @@ Shader "Shader Forge/spongytest" {
                 o.normalDir = UnityObjectToWorldNormal(v.normal);
                 o.tangentDir = normalize( mul( unity_ObjectToWorld, float4( v.tangent.xyz, 0.0 ) ).xyz );
                 o.bitangentDir = normalize(cross(o.normalDir, o.tangentDir) * v.tangent.w);
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (o.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(node_5379, _MainTexture),0.0,0));
+                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(o.uv0, _MainTexture),0.0,0));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
@@ -305,7 +297,7 @@ Shader "Shader Forge/spongytest" {
                 float node_9842 = (node_7290.b-1.0); // Checking height of player
                 float node_8730_if_leA = step(node_9842,0.0);
                 float node_8730_if_leB = step(0.0,node_9842);
-                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*0.5+0.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
+                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*1.0+-1.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 float3 lightColor = _LightColor0.rgb;
                 o.pos = UnityObjectToClipPos(v.vertex );
@@ -338,9 +330,7 @@ Shader "Shader Forge/spongytest" {
                 float LdotH = saturate(dot(lightDirection, halfDirection));
                 float3 specularColor = 0.0;
                 float specularMonochrome;
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (i.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2D(_MainTexture,TRANSFORM_TEX(node_5379, _MainTexture));
+                float4 _MainTexture_var = tex2D(_MainTexture,TRANSFORM_TEX(i.uv0, _MainTexture));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
@@ -406,7 +396,6 @@ Shader "Shader Forge/spongytest" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
-            uniform float4 _TimeEditor;
             uniform float4 _Color;
             uniform float _Strength;
             uniform sampler2D _MainTexture; uniform float4 _MainTexture_ST;
@@ -429,9 +418,7 @@ Shader "Shader Forge/spongytest" {
                 o.uv0 = v.texcoord0;
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (o.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(node_5379, _MainTexture),0.0,0));
+                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(o.uv0, _MainTexture),0.0,0));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
@@ -441,7 +428,7 @@ Shader "Shader Forge/spongytest" {
                 float node_9842 = (node_7290.b-1.0); // Checking height of player
                 float node_8730_if_leA = step(node_9842,0.0);
                 float node_8730_if_leB = step(0.0,node_9842);
-                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*0.5+0.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
+                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*1.0+-1.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityObjectToClipPos(v.vertex );
                 TRANSFER_SHADOW_CASTER(o)
@@ -479,7 +466,6 @@ Shader "Shader Forge/spongytest" {
             #pragma multi_compile_fog
             #pragma only_renderers d3d9 d3d11 glcore gles 
             #pragma target 3.0
-            uniform float4 _TimeEditor;
             uniform float4 _Color;
             uniform float _Strength;
             uniform sampler2D _MainTexture; uniform float4 _MainTexture_ST;
@@ -503,9 +489,7 @@ Shader "Shader Forge/spongytest" {
                 o.uv0 = v.texcoord0;
                 o.uv1 = v.texcoord1;
                 o.uv2 = v.texcoord2;
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (o.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(node_5379, _MainTexture),0.0,0));
+                float4 _MainTexture_var = tex2Dlod(_MainTexture,float4(TRANSFORM_TEX(o.uv0, _MainTexture),0.0,0));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
@@ -515,7 +499,7 @@ Shader "Shader Forge/spongytest" {
                 float node_9842 = (node_7290.b-1.0); // Checking height of player
                 float node_8730_if_leA = step(node_9842,0.0);
                 float node_8730_if_leB = step(0.0,node_9842);
-                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*0.5+0.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
+                v.vertex.xyz += (node_8285*lerp(saturate(((length(float2(node_7290.r,node_7290.g))*1.0+-1.0)*_Strength)),1.0,saturate(lerp((node_8730_if_leA*(node_9842*(-1.0)))+(node_8730_if_leB*node_9842),node_9842,node_8730_if_leA*node_8730_if_leB))));
                 o.posWorld = mul(unity_ObjectToWorld, v.vertex);
                 o.pos = UnityMetaVertexPosition(v.vertex, v.texcoord1.xy, v.texcoord2.xy, unity_LightmapST, unity_DynamicLightmapST );
                 return o;
@@ -527,9 +511,7 @@ Shader "Shader Forge/spongytest" {
                 
                 o.Emission = _Emission.rgb;
                 
-                float4 node_9099 = _Time + _TimeEditor;
-                float2 node_5379 = (i.uv0+(node_9099.r/3.0)*float2(1,1));
-                float4 _MainTexture_var = tex2D(_MainTexture,TRANSFORM_TEX(node_5379, _MainTexture));
+                float4 _MainTexture_var = tex2D(_MainTexture,TRANSFORM_TEX(i.uv0, _MainTexture));
                 float3 node_6246 = (_MainTexture_var.rgb*_Color.rgb);
                 float node_4959 = 0.4;
                 float node_8285_if_leA = step(node_6246,node_4959);
